@@ -15,8 +15,8 @@ To set up your development environment, follow these steps:
 
 1. **Clone the repository**
 ```bash
-git clone [your-repo-link]
-cd [your-project-name]
+git clone https://github.com/ronkattan/titan.git
+cd titan
 ```
 2. **Install dependencies**
 
