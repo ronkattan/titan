@@ -86,19 +86,19 @@ The server will default to port 8000. Access the API at `http://localhost:8000`.
 
 ## CPU and Memory Optimization
 
-- **Preprocessing & In-Memory Storage**: At startup, the dictionary is preprocessed and stored efficiently. This reduces the need for heavy computation with each request, saving both CPU time and memory.
+-   **Preprocessing & In-Memory Storage**: At startup, the dictionary is preprocessed and stored efficiently. This reduces the need for heavy computation with each request, saving both CPU time and memory.
 
-- **Efficient Data Lookup**: The application uses a smart lookup system that allows for quick access to data, significantly speeding up the process of finding similar words.
+-   **Efficient Data Lookup**: The application uses a smart lookup system that allows for quick access to data, significantly speeding up the process of finding similar words.
 
-- **Simplified Input**: By accepting only lowercase English letters, the app simplifies its processing, leading to quicker response times.
+-   **Simplified Input**: By accepting only lowercase English letters, the app simplifies its processing, leading to quicker response times.
 
 These approaches ensure the application runs smoothly, even under heavy use.
 
 ## Handling High Request Volumes
 
-- **Built on Node.js & Express**: Using Node.js and Express, the application can efficiently manage many requests at once, keeping the service responsive.
+-   **Built on Node.js & Express**: Using Node.js and Express, the application can efficiently manage many requests at once, keeping the service responsive.
 
-- **Stateless Design**: The server treats each request separately, enhancing its ability to scale and maintain performance under increased loads.
+-   **Stateless Design**: The server treats each request separately, enhancing its ability to scale and maintain performance under increased loads.
 
 This setup ensures that the service remains fast and reliable, ready to handle numerous requests without a drop in performance.
 
