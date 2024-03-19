@@ -6,7 +6,7 @@ export function preprocessDictionary(dictionaryPath: string): Map<string, string
 
     const wordMap: Map<string, string[]> = new Map();
 
-    words.forEach(word => {
+    words.forEach((word: string) => {
         const key = word.split('').sort().join('');
         const existingWords = wordMap.get(key) || [];
         wordMap.set(key, [...existingWords, word]);
