@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from 'express';
-import { DictionaryService } from '../services/Dictionary.service';
+import { DictionaryService } from '../services/dictionary.service';
 
 export class SimilarWordsController {
     constructor(private dictionaryService: DictionaryService) {}
