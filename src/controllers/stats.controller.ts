@@ -11,7 +11,7 @@ export class StatsController {
         res.json({
             totalWords: this.dictionaryService.getTotalWords(),
             totalRequests: stats.totalRequests,
-            avgProcessingTimeNs: stats.avgProcessingTimeNs
+            avgProcessingTimeNs: stats.avgProcessingTimeNs,
         });
     }
 }

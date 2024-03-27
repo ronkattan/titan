@@ -24,7 +24,6 @@ app.get('/api/v1/similar', validateWord, (req, res, next) =>
 
 app.get('/api/v1/stats', (req, res) => statsController.getStats(req, res)); // Use StatsController for /api/v1/stats
 
-
 app.all('*', (req, res) => {
     console.error(`404 Not Found - The requested URL ${req.path} was not found on this server.`);
     res.status(404).send('404 Not Found - The requested URL was not found on this server.');

@@ -4,10 +4,10 @@ import { DictionaryService } from '../services/dictionary.service';
 export class SimilarWordsController {
     constructor(private dictionaryService: DictionaryService) {}
 
-    public findSimilarWords(req: Request, res: Response, next: NextFunction): void {
+    public async findSimilarWords(req: Request, res: Response, next: NextFunction): Promise<void> {
         try {
             const word = req.query.word as string;
-            const similarWords = this.dictionaryService.findSimilar(word);
+            const similarWords = await this.dictionaryService.findSimilar(word);
             res.json({ similar: similarWords });
         } catch (error: unknown) {
             if (error instanceof Error) {
@@ -17,7 +17,7 @@ export class SimilarWordsController {
             } else {
                 console.error(`An unexpected error occurred: ${error}`);
             }
-            next(error);
+            next(error); // Pass the error to Express error handling middleware
         }
     }
 }
